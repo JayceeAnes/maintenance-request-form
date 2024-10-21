@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Repair Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maintenance Repair Work Request Form</h1>
+        <form id="repairForm">
+            <!-- Date of Request -->
+            <label for="requestDate">Date of Request</label>
+            <input type="date" id="requestDate" required>
+
+            <!-- Requestor Name -->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name" required>
+
+            <!-- Department -->
+            <label for="department">Department</label>
+            <input type="text" id="department" placeholder="Enter your department" required>
+
+            <!-- Type of Issue -->
+            <label for="typeOfIssue">Type of Issue</label>
+            <select id="typeOfIssue" required>
+                <option value="">Select Issue Type</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Detailed Description -->
+            <label for="description">Detailed Description</label>
+            <textarea id="description" placeholder="Describe the issue" required></textarea>
+
+            <!-- Area and Location -->
+            <label for="area">Area</label>
+            <input type="text" id="area" placeholder="Enter the area" required>
+
+            <!-- Urgency Level -->
+            <label for="urgency">Urgency Level</label>
+            <select id="urgency" required>
+                <option value="">Select Urgency Level</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
